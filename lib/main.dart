@@ -17,6 +17,10 @@ class WebHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Dart Web'),
+        leading: IconButton(icon: Icon(Icons.menu), onPressed: () {},),
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.account_circle), onPressed: () {},)
+        ],
       ),
       body: Center(
         child: Column(

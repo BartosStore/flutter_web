@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-main() => runApp(
-  MaterialApp(
-    title: 'Dart Web',
-    debugShowCheckedModeBanner: false,
-    theme: ThemeData(
-      primarySwatch: Colors.deepPurple,
-    ),
-    home: WebHome(),
-  )
-);
+main() => runApp(MaterialApp(
+      title: 'Dart Web',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+      ),
+      home: WebHome(),
+    ));
 
 class WebHome extends StatelessWidget {
   @override
@@ -17,18 +15,32 @@ class WebHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Dart Web'),
-        leading: IconButton(icon: Icon(Icons.menu), onPressed: () {},),
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {},
+        ),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.account_circle), onPressed: () {},)
+          IconButton(
+            icon: Icon(Icons.account_circle),
+            onPressed: () {},
+          )
         ],
       ),
       body: Center(
+          child: Container(
+        height: 400,
+        width: 300,
+        padding: EdgeInsets.symmetric(horizontal: 20),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(blurRadius: 6, color: Colors.grey, spreadRadius: 4)
+            ]),
         child: Column(
-          children: <Widget>[
-            Text('This is the first dart web text.')
-          ],
+          children: <Widget>[Text('This is the first dart web text.')],
         ),
-      ),
+      )),
     );
   }
 }

@@ -51,23 +51,21 @@ class WebHome extends StatelessWidget {
               keyboardType: TextInputType.text,
               textInputAction: TextInputAction.next,
               decoration: InputDecoration(
-                hintText: 'Enter Username',
-                hintStyle: TextStyle(color: Colors.grey),
-                labelText: 'Username'
-              ),
+                  hintText: 'Enter Username',
+                  hintStyle: TextStyle(color: Colors.grey),
+                  labelText: 'Username'),
             ),
             SizedBox(
               height: 35,
             ),
             TextField(
               autofocus: true,
-              keyboardType: TextInputType.text,
+              obscureText: true,
               textInputAction: TextInputAction.done,
               decoration: InputDecoration(
-                hintText: 'Enter Password',
-                hintStyle: TextStyle(color: Colors.grey),
-                labelText: 'Password'
-              ),
+                  hintText: 'Enter Password',
+                  hintStyle: TextStyle(color: Colors.grey),
+                  labelText: 'Password'),
             )
           ],
         ),

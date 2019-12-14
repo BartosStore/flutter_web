@@ -43,7 +43,19 @@ class WebHome extends StatelessWidget {
             FlutterLogo(
               size: 100,
             ),
-            Text('This is the first dart web text.')
+            SizedBox(
+              height: 20,
+            ),
+            TextField(
+              autofocus: true,
+              keyboardType: TextInputType.text,
+              textInputAction: TextInputAction.next,
+              decoration: InputDecoration(
+                hintText: 'Enter Username',
+                hintStyle: TextStyle(color: Colors.grey),
+                labelText: 'Username'
+              ),
+            )
           ],
         ),
       )),

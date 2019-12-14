@@ -39,7 +39,12 @@ class WebHome extends StatelessWidget {
             ]),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[Text('This is the first dart web text.')],
+          children: <Widget>[
+            FlutterLogo(
+              size: 100,
+            ),
+            Text('This is the first dart web text.')
+          ],
         ),
       )),
     );

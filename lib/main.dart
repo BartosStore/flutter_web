@@ -83,6 +83,11 @@ class WebHome extends StatelessWidget {
           ],
         ),
       )),
+      floatingActionButton: FloatingActionButton.extended(
+        icon: Icon(Icons.message),
+        label: Text('Contact us'),
+        onPressed: () {},
+      ),
     );
   }
 }

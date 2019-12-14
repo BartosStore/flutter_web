@@ -55,6 +55,19 @@ class WebHome extends StatelessWidget {
                 hintStyle: TextStyle(color: Colors.grey),
                 labelText: 'Username'
               ),
+            ),
+            SizedBox(
+              height: 35,
+            ),
+            TextField(
+              autofocus: true,
+              keyboardType: TextInputType.text,
+              textInputAction: TextInputAction.done,
+              decoration: InputDecoration(
+                hintText: 'Enter Password',
+                hintStyle: TextStyle(color: Colors.grey),
+                labelText: 'Password'
+              ),
             )
           ],
         ),

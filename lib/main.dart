@@ -4,6 +4,9 @@ main() => runApp(
   MaterialApp(
     title: 'Dart Web',
     debugShowCheckedModeBanner: false,
+    theme: ThemeData(
+      primarySwatch: Colors.deepPurple,
+    ),
     home: WebHome(),
   )
 );

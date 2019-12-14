@@ -38,6 +38,7 @@ class WebHome extends StatelessWidget {
               BoxShadow(blurRadius: 6, color: Colors.grey, spreadRadius: 4)
             ]),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[Text('This is the first dart web text.')],
         ),
       )),

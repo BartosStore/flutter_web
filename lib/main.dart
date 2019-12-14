@@ -66,6 +66,19 @@ class WebHome extends StatelessWidget {
                   hintText: 'Enter Password',
                   hintStyle: TextStyle(color: Colors.grey),
                   labelText: 'Password'),
+            ),
+            SizedBox(
+              height: 35,
+            ),
+            RaisedButton(
+              shape: StadiumBorder(),
+              splashColor: Colors.orange,
+              color: Theme.of(context).primaryColor,
+              onPressed: () {},
+              child: Text(
+                'LOG IN',
+                style: TextStyle(color: Colors.white),
+              ),
             )
           ],
         ),

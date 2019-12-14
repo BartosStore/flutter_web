@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 main() => runApp(
   MaterialApp(
     title: 'Dart Web',
+    debugShowCheckedModeBanner: false,
     home: WebHome(),
   )
 );
